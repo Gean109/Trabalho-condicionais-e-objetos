@@ -1,0 +1,189 @@
+//Aula - Exercicio: Condicionais & Objetos
+
+
+//Exercicio 1
+
+/*
+
+const pessoa = {
+    nome: "Alice",
+    idade: 25,
+    temCarteiraDeMotorista: true
+    }
+    if (pessoa.idade >= 18 && pessoa.temCarteiraDeMotorista) {
+    console.log(`${pessoa.nome} pode dirigir!`)
+    } else {
+    console.log(`${pessoa.nome} não pode dirigir.`)
+    }
+*/
+
+//Letra A : Foi criado propriedades com com valores e um objeto perguntando se Alice é maior ou menor que 18 anos.
+//Letra B : Será impressa se o valor recebido for maior que o numero recebido no if,ou melhor.."voltado pra if"
+//e nao será impressa essa string se o valor for voltado para else "O numero ser menor que o valor recebido na função.
+
+
+//Exercicio 2
+
+
+/*
+const animal = {
+    nome: "Leão",
+    carnivoro: true
+    }
+    if (animal.carnivoro) {
+    console.log(`${animal.nome} é um animal carnívoro.`)
+    } else {
+    console.log(`${animal.nome} não é um animal carnívoro.`)
+    }
+*/  
+//Letra A : O objetivo do código é saber se o Leão é carnivoro ou não.
+//Letra B : Caso seja if,volta "É um animal carnívoro".Caso seja else volte "Não é um animal carnívoro".
+
+
+
+//Exercicio 3
+
+/*
+const numero = 10;
+if (numero > 5) {
+console.log("O número é maior do que 5.");
+} else {
+console.log("O número é menor ou igual a 5.");
+}
+if (numero % 2 === 0) {
+console.log("O número é par.");
+} else {
+console.log("O número é ímpar.");
+}
+*/
+//Letra A : Ele ta querendo saber se 10 é maior ou menor que 5 e pergunta se o numero é par ou impar
+//Letra B :O número é maior do que 5.
+//         O número é par.
+
+
+//Exercicio 4 
+/*
+
+rie um programa que pergunte ao usuário sua idade e armazene essa
+informação em uma variável chamada idade . Em seguida, utilize uma
+estrutura condicional para verificar se o usuário é maior ou igual a 18
+Condicionais & Objetos 3
+anos. Se for, imprima a mensagem "Você é maior de idade", caso
+contrário, imprima "Você é menor de idade".
+
+let idade1 = {
+    nome: "Gean",
+    idade: 16,
+maiorMenor: false
+}
+    if (idade1.idade >= 18 && idade1.maiorMenor) {
+    console.log(`${idade1.idade} posso dirigir`)
+    } else {
+    console.log(`${idade1.idade} menor de idade!`)
+    }
+
+*/
+
+
+//Exercicio 5
+
+/*Crie um programa que pergunte ao usuário qual turno do dia ele estuda:
+"M" para matutino, "T" para tarde ou "N" para noturno. Armazene a
+resposta em uma variável chamada turno . Utilize uma estrutura
+condicional para imprimir a mensagem "Bom Dia!" se o usuário estuda
+de manhã, "Boa Tarde!" se estuda à tarde e "Boa Noite!" se estuda à
+noite.
+*/
+/*
+function turnoUsuario(turno){
+     if(turno === "M") {
+        return "Bom Dia";
+    } else if(turno === "T"){
+        return "Boa Tarde";
+    } else if(turno === "N"){
+        return "Boa Noite";
+    }
+}
+ console.log(turnoUsuario(
+        prompt("Digite algo")));
+
+ */       
+
+//Exercicio 6
+
+//Modifique o exercício anterior para usar uma estrutura de switch case
+//em vez de uma estrutura condicional if/else.
+/*
+let turnoUsuario
+switch (turnoUsuario){
+    case 'M':
+        console.log('Bom Dia')
+        break
+    case 'T':
+    console.log('Boa Tarde')
+    break
+    case 'N':
+    console.log('Boa Noite')
+    break
+default:
+    console.log('Turno não encontrado')
+    break
+}
+*/
+
+
+//Exercicio 7
+
+/*Crie um objeto chamado aluno com as seguintes propriedades: nome ,
+idade , tipoDeCurso e temBolsa . Em seguida, escreva um programa que
+verifica se o aluno pode se candidatar a uma bolsa de estudos. Para ser
+elegível, o aluno deve ter menos de 30 anos, estar matriculado em um
+curso de graduação e não ter bolsa. Se o aluno atender a todos esses
+critérios, imprima "Você pode se candidatar a uma bolsa de estudos!".
+Caso contrário, imprima "Desculpe, você não atende aos requisitos para
+a bolsa.
+*/
+/*
+function aluno(nome, idade, tipoDeCurso, temBolsa){
+    if(idade < 30 && tipoDeCurso == ("Sim") && temBolsa ==("Não")){
+        return(`${nome} você pode se candidatar a uma bolsa de estudo!`)}
+    else {
+        return(`Desculpe ${nome} você não atende aos requisitos para a bolsa`)
+    ;}
+}
+    console.log(aluno(prompt("Seu nome"),
+    Number(prompt("Sua idade")),
+    (prompt("está matriculado em alguns curso?")),
+    (prompt("Tem bolsa?"))));
+*/
+
+//Exercicio 8
+
+/*Crie um objeto chamado produto com as propriedades nome , preco ,
+desconto e freteGratis . Em seguida, escreva um programa que calcule
+o preço final do produto levando em consideração o desconto e a
+possibilidade de frete grátis. Se o produto tiver desconto e frete grátis,
+imprima "Preço final: [preço com desconto] (Frete Grátis)". Se tiver
+apenas desconto, imprima "Preço final: [preço com desconto]". Se tiver
+apenas frete grátis, imprima "Preço final: [preço] (Frete Grátis)". Se não
+tiver nenhum dos dois, imprima "Preço final: [preço]". Certifique-se de
+que o programa funcione corretamente mesmo se o objeto produto for
+alterado com diferentes valores.
+*/
+
+
+
+/*
+function produto(nome, preço, desconto, freteGratis){(
+let preçodesconto= ((preço / 100) * desconto)
+if (desconto > 0 && freteGratis == "Sim")(
+    return(`item: ${nome}, Preço `)
+
+
+
+    console.log(produto(prompt("Seu nome"),
+    Number(prompt("preço")),
+    Number(prompt("desconto")),
+    (prompt("Tem frete gratis?"))));
+
+*/
